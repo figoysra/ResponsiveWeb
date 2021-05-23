@@ -1,0 +1,120 @@
+footer {
+    display: flex;
+    background-color: #F8F8F8;
+    font-family: rubik;
+}
+
+footer .information {
+    width: 70%;
+    padding: 40px 60px;
+}
+
+footer .information .text {
+    margin-top: 10px;
+    width: 290px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4F5665;
+}
+
+footer .information .logo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+footer .information .logo h1 {
+    font-size: 20px;
+    margin-left: 14px;
+}
+
+
+footer .information .socialmedia .socmed {
+    margin-top: 20px;
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    cursor: pointer;
+}
+
+footer .information .socialmedia .socmed li {
+    margin-right: 14px;
+}
+
+footer .copyright {
+    margin-top: 10px;
+    color: #AFB5C0;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+footer .infomenu {
+    width: 30%;
+    padding: 40px 60px;
+    display: flex;
+}
+
+
+footer .list {
+    margin-right: 30px;
+}
+
+footer .list p {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+footer .list li {
+    margin-top: 10px;
+    list-style-type: none;
+    color: #4F5665;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+footer .list li:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width:576px)  {
+    footer {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid green; */
+        height: 580px;
+    }
+    footer .information{
+        width: auto;
+        padding: 20px 40px;
+        /* background-color: hotpink; */
+        /* padding: 20px 10px; */
+    }
+    footer .information .text{
+        width: 300px;
+
+    }
+    footer .information .logo h1 {
+        font-size: 15px;
+    }
+    footer .copyright{
+        font-size: 10px;
+    }
+    footer .infomenu {
+        /* border: 1px solid rebeccapurple; */
+        width: auto;
+        height: 100px;
+        padding: 0px;
+        margin-top: 10px;
+    }
+    footer .list {
+        margin: 0px;
+        /* background-color: red; */
+        width: 100%;
+    }
+    footer .list p{
+        margin: 0px;
+        font-size: 15px;
+    }
+}

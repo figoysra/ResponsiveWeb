@@ -1,0 +1,207 @@
+@font-face {
+    font-family: rubik;
+    src: url(../../font/Rubik.ttf);
+}
+@font-face {
+    font-family: rubikbold;
+    src: url(../../font/Rubik-Bold.ttf);
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+section{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    position: relative;
+}
+section .background{
+    position: relative;
+    width: 45%;
+    height: 100%;
+}
+section .background img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content{
+    width: 65%;
+    height: 100%;
+}
+.content .navbar{
+    display: flex;
+    padding: 10px 20px;
+}
+.content .navbar .logo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.content .navbar .logo a {
+    font-family: rubik;
+    color: black;
+    font-size: 20px;
+    margin-left: 14px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.content .navbar .Signup{
+    font-family: rubikbold;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 30px;
+    font-weight: bold;
+    color: #6A4029;
+}
+
+.content .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .form form{
+    padding-top: 40px;
+}
+.content .form form label{
+    color: #4F5665;
+    font-weight: bold;
+    font-size: 15px;
+}
+.content .form form input{
+    border: 1px solid #CCCCCC;
+    width: 500px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+.content .form .signup{
+    margin-top: 30px;
+    margin-bottom: 8px;
+    border: none;
+    padding: 15px 238px;
+    border-radius: 10px;
+    color: #6A4029;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px #CCCCCC;
+    background-color: #ffba33;
+    cursor: pointer;
+}
+.content .form .signup:hover{
+    background-color: #FFA900;
+}
+
+.content .action{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content .action .btngoogle{
+    padding: 15px 165px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 5px 10px #CCCCCC;
+    cursor: pointer;
+}
+.content .action .btngoogle:hover{
+    background-color: #eeeded;
+}
+.content .action .btngoogle svg {
+    margin-right: 14px;
+}
+
+.content .action strong {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #9F9F9F;
+}
+
+.content .action .login{
+    border: none;
+    border-radius: 10px;
+    padding: 15px 220px;
+    box-shadow: 5px 5px 10px #CCCCCC;
+    background-color: #6A4029;
+    cursor: pointer;
+}
+.content .action .login a{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.content .action .login:hover{
+    background-color: #362216;
+}
+
+
+/* Mobile Screen */
+
+@media screen and (max-width:576px) {
+    
+    section .background{
+        display: none;
+    }
+    section .content{
+        width: 100%;
+    }
+    .content .navbar .logo a{
+        font-size: 15px ;
+    }
+    .content .form {
+        /* border: 1px solid green; */
+        padding: 0px;
+        display: flex;
+        padding-top: 30px;
+        align-items: flex-start;
+    }
+    .content .form form {
+        padding: 0px 17px;
+        /* width: 100%; */
+        /* border: 1px solid green; */
+    }
+    .content .form form input {
+        width: 300px;
+    }
+    .content .form .signup {
+        margin-top: 20px;
+        width: 340px;
+        padding: 10px 0px 10px 0px;
+    }
+    .content .action .btngoogle {
+        width: 340px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 15px 0px 15px 0px;
+    }
+    .content .action strong {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    .content .action .login{
+        width: 340px;
+        padding: 10px 0px 10px 0px;
+    }
+    
+}

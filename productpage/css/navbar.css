@@ -1,0 +1,148 @@
+@font-face {
+    font-family: poppins;
+    src: url(../../font/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: poppinsbold;
+    src: url(../../font/Poppins-Black.ttf);
+}
+@font-face {
+    font-family: rubikbold;
+    src: url(../../font/Rubik-Bold.ttf);
+}
+@font-face {
+    font-family: rubik;
+    src: url(../../font/Rubik.ttf);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: rubik;
+}
+
+.container {
+    width: 100%;
+    background-color: white;
+    box-shadow: 1px 1px 10px #CCCCCC;
+    display: flex;
+}
+
+.container .logo {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .logo h1 {
+    font-size: 15px;
+    margin: 10px;
+}
+
+.primary-menu {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.primary-menu .menu {
+    display: flex;
+    list-style-type: none;
+
+}
+
+.primary-menu .menu li{
+    margin: 15px;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+}
+.primary-menu .menu li a{
+    text-decoration: none;
+    color: #4f5665;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+}
+
+.primary-menu .menu a:hover {
+    color: #6A4029;
+    font-weight: 700;
+    border-bottom: 2px solid #6A4029;
+}
+
+.secondary-menu {
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.secondary-menu input {
+    width: 150px;
+    border-radius: 10px;
+    border: 1px solid #4F5665;
+    padding: 5px 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.secondary-menu .chat {
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.secondary-menu .chat .notif {
+    position: absolute;
+    bottom: 8px;
+    right: 13px;
+}
+.secondary-menu .chat .notif p{
+    height: 15px;
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-family: rubik;
+    font-weight: 600;
+    background-color: #6A4029;
+    border-radius: 30px;
+    color: white;
+}
+
+.secondary-menu .chat img {
+    width: 22px;
+    height: 23px;
+}
+
+.secondary-menu .image {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 23px;
+    height: 23px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.secondary-menu .image img {
+    width: 100%;
+    height: auto;
+    margin-top: -5px;
+}
+
+@media screen and (max-width:576px) {
+    .container {
+        flex-direction: column;
+    }
+    .primary-menu{
+        display: none;
+    }
+    .secondary-menu{
+        display: none;
+    }
+}
+
