@@ -320,7 +320,7 @@ aside .term li{
     .content .productmenu .row{
         /* border: 1px solid khaki; */
         display: grid;
-        grid-template-areas: ". . ";
+        grid-template-areas: ". .";
     }
     .content .productmenu .row .product{
         width: 120px;

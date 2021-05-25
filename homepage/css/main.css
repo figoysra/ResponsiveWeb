@@ -288,7 +288,7 @@ main .partner .logo img{
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 350px;
+        height: 400px;
     }
     main .landingpage .search{
         margin: 0px;
@@ -321,7 +321,8 @@ main .partner .logo img{
 
     main .info{
         /* display: none; */
-        position: static;
+        position: absolute;
+        bottom: 320px;
     }
     main .infomenu .staff {
         /* border: 1px solid seagreen; */
@@ -358,7 +359,7 @@ main .partner .logo img{
         flex-direction: column;
         align-items: center;
         
-        margin: 20px 0px;
+        margin: 50px 0px;
     }
     main .productbenefit .image{
         display: none;
