@@ -209,6 +209,8 @@ aside .term li{
     font-weight: 200;
     font-family: poppins;
 }
+
+
 @media screen and (max-width:576px) {
     main{
         flex-direction: column;
@@ -297,13 +299,7 @@ aside .term li{
         font-size: 12px;
     }
     aside .term .listterm ul{
-        /* display: grid;
-        grid-template-areas: ". ."; */
-        /* list-style-type: square; */
         font-size: 10px;
-
-        /* border: 1px solid crimson; */
-        /* padding: 0px; */
     }
     aside .term li{
         /* border: 1px solid hotpink; */

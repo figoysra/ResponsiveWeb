@@ -79,3 +79,49 @@ footer .list li {
 footer .list li:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width:576px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid green; */
+        height: 580px;
+    }
+
+    footer .information {
+        width: auto;
+        padding: 20px 40px;
+        /* background-color: hotpink; */
+    }
+
+    footer .information .text {
+        width: 300px;
+    }
+
+    footer .information .logo h1 {
+        font-size: 15px;
+    }
+
+    footer .copyright {
+        font-size: 10px;
+    }
+
+    footer .infomenu {
+        /* border: 1px solid rebeccapurple; */
+        width: auto;
+        height: 100px;
+        padding: 0px;
+        margin-top: 10px;
+    }
+
+    footer .list {
+        margin: 0px;
+        /* background-color: red; */
+        width: 100%;
+    }
+
+    footer .list p {
+        margin: 0px;
+        font-size: 15px;
+    }
+}

@@ -40,47 +40,63 @@ body {
     margin: 10px;
 }
 
-.primary-menu {
-    width: 40%;
+.dropdown{
+    width: 70%;
+    display: flex;
+}
+
+.dropdown .icon-menu{
+    display: flex;
+    justify-content: flex-end;
+}
+.dropdown .icon-menu img{
+    width: 50px;
+    display: none;
+}
+
+.dropdown .menu{
+    display: flex;
+    width: 100%;
+}
+.dropdown .menu .primary-menu{
+    /* border: 1px solid aqua; */
+    flex-grow: 1;
     display: flex;
     justify-content: center;
 }
-
-.primary-menu .menu {
+.dropdown .menu .primary-menu ul{
     display: flex;
     list-style-type: none;
-
 }
-
-.primary-menu .menu li{
+.dropdown .menu .primary-menu ul li{
     margin: 15px;
     font-size: 13px;
     font-weight: 400;
     cursor: pointer;
     text-decoration: none;
 }
-.primary-menu .menu li a{
+.dropdown .menu .primary-menu ul li a{
     text-decoration: none;
     color: #4f5665;
     padding-bottom: 2px;
     border-bottom: 2px solid transparent;
 }
-
-.primary-menu .menu a:hover {
+.dropdown .menu .primary-menu ul li a:hover{
     color: #6A4029;
     font-weight: 700;
     border-bottom: 2px solid #6A4029;
 }
 
-.secondary-menu {
-    width: 30%;
+
+.dropdown .menu .secondary-menu{
+    /* border: 1px solid hotpink; */
+    flex-grow: 1;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     cursor: pointer;
 }
-
-.secondary-menu input {
+.dropdown .menu .secondary-menu input{
     width: 150px;
     border-radius: 10px;
     border: 1px solid #4F5665;
@@ -88,19 +104,17 @@ body {
     margin-left: 15px;
     margin-right: 15px;
 }
-
-.secondary-menu .chat {
+.dropdown .menu .secondary-menu .chat{
     position: relative;
     margin-left: 15px;
     margin-right: 15px;
 }
-
-.secondary-menu .chat .notif {
+.dropdown .menu .secondary-menu .chat .notif{
     position: absolute;
     bottom: 8px;
     right: 13px;
 }
-.secondary-menu .chat .notif p{
+.dropdown .menu .secondary-menu .chat .notif p{
     height: 15px;
     width: 15px;
     display: flex;
@@ -113,13 +127,12 @@ body {
     border-radius: 30px;
     color: white;
 }
-
-.secondary-menu .chat img {
+.dropdown .menu .secondary-menu .chat img{
     width: 22px;
     height: 23px;
 }
-
-.secondary-menu .image {
+.dropdown .menu .secondary-menu .image{
+    
     margin-left: 15px;
     margin-right: 15px;
     width: 23px;
@@ -127,22 +140,66 @@ body {
     overflow: hidden;
     border-radius: 50%;
 }
-
-.secondary-menu .image img {
+.dropdown .menu .secondary-menu .image img{
     width: 100%;
     height: auto;
     margin-top: -5px;
 }
 
+
 @media screen and (max-width:576px) {
-    .container {
+    .dropdown .icon-menu img{
+        display: block;
+    }
+    .container .logo{
+        width:40% ;
+        /* border: 1px solid hotpink; */
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 15px;
+        padding-left: 20px;
+    }
+    .container .logo h1{
+        margin-top: 3px;
+    }
+    .container .logo svg{
+        width: 20px;
+    }
+    .dropdown .menu {
+        display: none;
+    }
+    .dropdown:hover{
+        display: flex;
         flex-direction: column;
     }
-    .primary-menu{
-        display: none;
+    .dropdown:hover .menu{
+        display: flex;
     }
-    .secondary-menu{
-        display: none;
+    .dropdown .icon-menu{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
     }
+    .dropdown .menu{
+        flex-direction: column;
+    }
+    .dropdown .menu .primary-menu ul{
+        /* border: 1px solid khaki; */
+        margin-right: 400px;
+        flex-direction: column;
+    }
+    .dropdown .menu .primary-menu ul li{
+        width: 100px;
+        font-size: 12px;
+    }
+    .dropdown .menu .secondary-menu{
+        margin-left: -100px;
+        margin-bottom: 20px;
+        /* border: 1px solid brown; */
+        justify-content: center;
+        flex-direction: row;
+
+    }
+
 }
 

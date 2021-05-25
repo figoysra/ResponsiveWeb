@@ -62,9 +62,6 @@ body {
 .primary-menu .menu {
     display: flex;
     justify-content: center;
-    /* flex-direction: column; */
-    /* padding: 0px; */
-    border: 1px solid blueviolet;
     width: 100%;
     list-style-type: none;
 
@@ -146,22 +143,23 @@ body {
     .icon-menu{
         width: 100%;
         display: flex;
-        /* border: 1px solid aqua; */
         align-items: flex-end;
     }
     .icon-menu img{
         display: block;
-        /* border: 1px solid green; */
     }
     .container .logo {
         width: 80%;
-        /* border: 1px solid blueviolet; */
         justify-content: flex-start;
         align-items: flex-start;
-        padding-top: 15px;
+        padding-top: 10px;
         padding-left: 20px;
     }
+    .container .logo h1{
+        margin-top: 5px;
+    }
     .menu{
+        width: 100%;
         display: none;
     }
     .dropdown:hover {
@@ -171,34 +169,25 @@ body {
     .dropdown:hover .menu {
         display: flex;
     }
-
-    /* agar icon hamburger menu menjadi di samping kanan */
     .icon-menu {
         display: flex;
         justify-content: flex-end;
     }
 
-    /* agar class menu menjadi di samping kiri */
+
     .menu {
-        margin-left: -35%;
+        margin-left: -50%;
         flex-direction: column;
     }
-
-    /* mengubah ul menu yang sebelumnya horizontal menjadi vertical */
     .primary-menu ul {
         flex-direction: column;
     }
-
-    /* mengubah posisi ul menu yang sebelumnya di tengah menjadi di samping kiri */
     .secondary-menu {
         justify-content: flex-start;
         
     }
-
-    /* mengubah ul menu yang sebelumnya horizontal menjadi vertical */
     .secondary-menu ul {
         display: flex;
         flex-direction: row;
-        /* flex-direction: column; */
     }
 }

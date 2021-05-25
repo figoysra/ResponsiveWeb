@@ -119,6 +119,9 @@ main .productbenefit .image{
 main .productbenefit .image img{
     height: 400px;
 }
+main .productbenefit .text{
+    margin-top: 50px;
+}
 main .productbenefit .text h1{
     margin: 0px;
     width: 420px;
@@ -138,6 +141,146 @@ main .productbenefit .list p{
 
 main .productbenefit .list svg{
     margin-right: 5px;
+}
+
+main .peoplefavorite{
+    margin: 50px 120px;
+    font-family: rubik;
+    /* border: 1px solid saddlebrown; */
+}
+main .peoplefavorite .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .peoplefavorite .title h1{
+    font-size: 20px;
+    /* border: 1px solid aqua; */
+    margin: 0px;
+}
+main .peoplefavorite .title p{
+    /* border: 1px solid hotpink; */
+    margin-top: 10px;
+    font-size: 14px;
+}
+main .peoplefavorite .favoriteproduct{
+    display: flex;
+    justify-content: center;
+}
+main .peoplefavorite .favoriteproduct .product{
+    border: 2px solid #dddddd;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+main .peoplefavorite .favoriteproduct .product:hover{
+    border: 2px solid #6A4029;
+    transform: scale(1.1);
+}
+main .peoplefavorite .favoriteproduct .product .round-border{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    overflow: hidden;
+    top: -50px;
+    left: 75px;
+    right: 75px;
+    border-radius: 100px;
+    border: 1px solid #CCCCCC;
+}
+main .peoplefavorite .favoriteproduct .product h1{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    /* height: 20px; */
+}
+main .peoplefavorite .favoriteproduct .product .listmenu{
+    margin-top: 10px;
+    font-size: 12px;
+    /* border: 1px solid green; */
+    height: 220px;
+}
+main .peoplefavorite .favoriteproduct .product .listmenu svg{
+    margin-right: 5px;
+}
+main .peoplefavorite .favoriteproduct .product .listmenu p{
+    margin-top: 20px;
+}
+main .peoplefavorite .favoriteproduct .product h2{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+main .peoplefavorite .favoriteproduct .product button{
+    margin-top: 10px;
+    padding: 10px 50px;
+    font-family: rubik;
+    font-size: 12px;
+    border-radius: 30px;
+    background-color: white;
+    border: 2px solid #ffba33;
+    cursor: pointer;
+    color: #6A4029;
+    font-weight: 700;
+}
+main .peoplefavorite .favoriteproduct .product button:hover{
+    background-color: #ffba33;
+    border: 2px solid transparent;
+}
+main .storemap{
+    margin: 20px 120px;
+}
+main .storemap .title{
+    font-family: rubik;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .storemap .title h1{
+    margin: 0px;
+    width: 220px;
+    font-size: 20px;
+    text-align: center;
+}
+main .storemap .title p{
+    font-size: 14px;
+    width: 450px;
+    text-align: center;
+}
+main .storemap .map{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+main .partner {
+    /* border: 1px solid green; */
+    margin: 30px 120px;
+}
+main .partner .title{
+    font-family: rubik;
+    font-weight: 900;
+    font-size: 22px;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+}
+main .partner .logo{
+    display: flex;
+    justify-content: center;
+}
+main .partner .logo img{
+    margin: 20px 15px;
+    width: auto;
+    height: 50px;
+    filter: grayscale(100%);
 }
 
 @media screen and (max-width:576px){
@@ -211,28 +354,21 @@ main .productbenefit .list svg{
         margin: 10px 10px;
     }
     main .productbenefit {
-        /* display: none; */
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* border: 1px solid red; */
-        margin: 0px;
+        
+        margin: 20px 0px;
     }
     main .productbenefit .image{
-        width: auto;
-        margin: 20px;
-    }
-    main .productbenefit .image img{
-        height: 200px;
+        display: none;
     }
     main .productbenefit .text{
         margin: 0px;
         /* background-color: #6A4029; */
         width: 100%;
-        height: 500px;
     }
     main .productbenefit .text .tag{
-        /* border: 1px solid green; */
         width: auto;
         padding-top: 20px;
         padding-left: 20px;
@@ -243,7 +379,7 @@ main .productbenefit .list svg{
     }
     main .productbenefit .text .tag h1{
         width: auto;
-        font-size: 20px;
+        font-size: 15px;
         
     }
     main .productbenefit .text p {
@@ -252,11 +388,63 @@ main .productbenefit .list svg{
     }
     main .productbenefit .list{
         padding: 0px 20px;
-        /* background-color: hotpink; */
     }
     main .productbenefit .list svg{
         width: 15px;
         height: 15px;
     }
-    
+    main .peoplefavorite{
+        /* border: 1px solid hotpink; */
+        width: auto;
+        margin: 30px 0px;
+    }
+    main .peoplefavorite .title h1{
+        font-size: 15px;
+    }
+    main .peoplefavorite .title p{
+        font-size: 12px;
+        width: 250px;
+        text-align: center;
+    }
+    main .peoplefavorite .favoriteproduct{
+        width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+    main .peoplefavorite .favoriteproduct .product{
+        padding: 15px 30px;
+        margin: 100px 10px;
+    }
+    main .peoplefavorite .favoriteproduct .product .round-border{
+        left: 50px;
+    }
+    main .storemap {
+        margin: 20px 0px;
+    }
+    main .storemap .title h1{
+        font-size: 15px;
+        width: 250px;
+    }
+    main .storemap .title p{
+        font-size: 12px;
+        width: 300px;
+        text-align: center;
+    }
+    main .storemap .map {
+        margin: 0px 10px
+    }
+    main .storemap .map svg{
+        width: 350px;
+        height: auto;
+    }
+    main .partner{
+        margin: 20px 0px;
+        width: 100%;
+    }
+    main .partner .title{
+        font-size: 15px;
+    }
+    main .partner .logo img{
+        height: 20px;
+    }
 }
